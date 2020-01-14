@@ -23,7 +23,7 @@ export default class Fetch extends ReactComponent {
   }
 
   componentDidMount() {
-    this.setState({ isLoading: true }, this._fetch);
+    this.setState({ isLoading: true }, this._fetch;
   }
 
   render() {

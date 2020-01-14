@@ -1,0 +1,48 @@
+.major{
+    display:flex;
+    flex-direction: row;
+}
+
+.firstline{
+    border:1px solid;
+    display:flex;
+    width:300px;
+   
+
+}
+.scroll{
+    max-height: 300px;
+    overflow-y: auto;
+}
+/* .cardbox{
+    /* padding-bottom: 0px; */
+    /* padding-top: 0px; */
+     */
+
+.buttonn{
+    /* display: flex;
+    flex-direction: row; */
+    color:black;
+    background-color: white;
+    margin-left: 5px;
+    }
+    
+.dropdown{
+    display:flex;
+    width:300px;
+}
+
+    
+    
+    
+
+.text {
+    
+    text-align: left;
+}
+#text2{
+    
+    text-align: left;
+
+
+}

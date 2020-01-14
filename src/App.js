@@ -4,13 +4,13 @@ import './App.css';
 import './Educationform.css';
 import Educationform from './Educationform';
 import Personalinfo from './components/Personalinfo';
-
-
+import Profile from './components/Profile';
 function App() {
   return (
-    <div className="Educationform">
+    <div>
 {/* <Educationform/> */}
-       <Personalinfo/>
+       {/* <Personalinfo/> */}
+       <Profile/>
           </div>
 
 

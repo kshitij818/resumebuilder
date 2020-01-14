@@ -6,7 +6,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input ,Card, CardImg, CardTex
 
  class Educationform extends Component {
      constructor(props) {
-         //super(props)
+         super(props)
 
          this.state = {
 

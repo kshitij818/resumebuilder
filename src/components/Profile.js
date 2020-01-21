@@ -27,7 +27,7 @@ class Profile extends Component {
              show:false
          });
      };
-     calling=(e)=>{
+     calling=textarea1=>{
          this.setState({
              textarea1:this.state.name1
             
@@ -42,10 +42,10 @@ class Profile extends Component {
         return (
             <div>
                 <Button color="primary" onClick={e=>{this.showModal();}}>CLICK ME</Button>
-                <Modal isOpen={this.state.show}>
+                <Modal isOpen={this.state.show} size="lg" aria-labelledby="contained-modal-title-vcenter"centered>
                     <ModalHeader>Profile Description</ModalHeader>
                     <ModalBody  >
-                    <Row>
+                    <Row sm="2">
 
                       
                        <Col sm={{ size: '6'}}>
@@ -85,32 +85,34 @@ class Profile extends Component {
                                           <Col sm={{ size: '6'}}>  
                                              
                                     
-                                   <textarea placeholder="Enter Profile"  id="textarea" rows="8" cols="29" wrap="hard">{this.state.textarea1}</textarea>
+                                   <textarea placeholder="Enter Profile"  id="textarea" rows="8" cols="40" wrap="hard">{this.state.textarea1}</textarea>
                                    
                                    </Col>
                                    
                                   
                                 
                                    <Col sm={{ size: '6' }}>
-                                       <div className="scroll">
-                                   <Card>
+                                       
+                                   <Card className="scroll">
                                        <CardBody style={{padding:"1px"}}>
-                                           <Card>
-                                               <CardBody style={{padding:"1px",contentAlign:"center"}}> 
+                                           <Card style={{padding:"1px"}}>
+                                               <CardBody > 
                                                {this.state.name1}
+                                               
                                                </CardBody>
                                            </Card>
-                                           <Button  color="danger"className="btn btn-primary btn-block" onClick= {e=>{this.calling();}}> CLICK ME</Button>
+                                           <Button  color="danger"className="btn btn-primary btn-block" onClick= {textarea1=>{this.calling();}}> CLICK ME</Button>
                                            <br></br>
                                            <Card style={{padding:"1px"}}>
                                                <CardBody>{this.state.name1}</CardBody>
+                                               
                                            </Card> 
                                            <Button color="danger" className="btn btn-primary btn-block" onClick={this.call()} > CLICK ME</Button>
                                            <br></br>
                                    
                                              </CardBody>
                                     </Card>
-                                    </div>
+                                    
                                       </Col>
                                       
                                      </Row>

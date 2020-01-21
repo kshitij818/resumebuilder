@@ -5,12 +5,16 @@ import './Educationform.css';
 import Educationform from './Educationform';
 import Personalinfo from './components/Personalinfo';
 import Profile from './components/Profile';
+import Skilldesignform from './components/Skilldesignform';
+import Educationalform from './components/Educationalform'
 function App() {
   return (
     <div>
 {/* <Educationform/> */}
        {/* <Personalinfo/> */}
-       <Profile/>
+       {/* <Profile/> */}
+       {/* <Skilldesignform/> */}
+       <Educationalform/>
           </div>
 
 
